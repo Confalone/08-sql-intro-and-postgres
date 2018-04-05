@@ -107,7 +107,7 @@ app.delete('/articles', (request, response) => {
   // COMMENT: What number(s) of the full-stack-diagram.png image correspond to the following line of code? Which method of article.js is interacting with this particular piece of `server.js`? What part of CRUD is being enacted/managed by this particular piece of code?
   // PUT YOUR RESPONSE HERE
   client.query(
-    'SELECT * FROM articles;'
+    'TRUNCATE TABLE articles;'
   )
     .then(() => {
       response.send('Delete complete')
